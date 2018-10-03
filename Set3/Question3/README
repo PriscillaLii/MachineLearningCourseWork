@@ -1,0 +1,5 @@
+Online learning
+
+In this problem you will implement and plot a learning curve for a simple online learning algorithm that uses multiplicative updates. The algorithm is Static-Expert, which is also similar to the Weighted Majority Algorithm. The pseudocode is given. In this regression framework, we will use loss(^y; y) = (^y 􀀀 y)2, which can be applied to any prediction ^y. The prediction of the algorithm is given in the first line inside the first for-loop. As experts, we will simply use the components of x, so the loss of expert i will therefore be loss(^yi; y) = (xi 􀀀 y)2.
+
+Use the Cloud data provided in cloud.csv (from the UCI Machine Learning Repository). Filter it to use the 7th feature (the 7th column) as the label, not as a feature (be sure to remove this column from the input features!). You should have 9 remaining features. For this online learning problem, do not permute the data set first, since the order matters. You will use this batch of data to simulate a stream of data by going through the whole data set once.
